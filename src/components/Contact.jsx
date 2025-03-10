@@ -16,15 +16,6 @@ function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend or email service
-    console.log("Form submitted:", formData)
-    // Reset form after submission
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    alert("Message sent successfully!")
-  }
-
   return (
     <section id="contact" className="contact">
       <div className="section-container">
@@ -153,15 +144,27 @@ function Contact() {
 
           <div className="contact-form-container">
             <h3 className="contact-subtitle">Send Me A Message</h3>
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form 
+              action="https://formsubmit.co/thushanmadu2003@gmail.com" 
+              method="POST" 
+              className="contact-form"
+            >
+              {/* Honeypot */}
+              <input type="text" name="_honey" style={{ display: 'none' }} />
+              
+              {/* Disable Captcha */}
+              <input type="hidden" name="_captcha" value="false" />
+              
+              {/* Success Page */}
+              <input type="hidden" name="_next" value="https://your-website-url.com/thanks" />
+
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name" className="form-label">
-                    Name
-                  </label>
+                  <label htmlFor="name" className="form-label">Name</label>
                   <input
-                    id="name"
+                    type="text"
                     name="name"
+                    id="name"
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
@@ -170,13 +173,11 @@ function Contact() {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="email" className="form-label">
-                    Email
-                  </label>
+                  <label htmlFor="email" className="form-label">Email</label>
                   <input
-                    id="email"
-                    name="email"
                     type="email"
+                    name="email"
+                    id="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email"
@@ -186,12 +187,11 @@ function Contact() {
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="subject" className="form-label">
-                  Subject
-                </label>
+                <label htmlFor="subject" className="form-label">Subject</label>
                 <input
-                  id="subject"
+                  type="text"
                   name="subject"
+                  id="subject"
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Subject"
@@ -200,12 +200,10 @@ function Contact() {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
+                <label htmlFor="message" className="form-label">Message</label>
                 <textarea
-                  id="message"
                   name="message"
+                  id="message"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Your Message"
