@@ -19,7 +19,7 @@ function About() {
 
           <div className="about-text">
             <h3 className="about-subtitle">
-              I'm <span className="text-accent">Your Name</span>, a Web Developer
+              I'm <span className="text-accent">Thushan Madhusanka Madarsinghe</span>, a Full-Stack Developer
             </h3>
             <p className="about-description">
               I am a passionate web developer with a strong focus on creating responsive and user-friendly websites.
@@ -35,22 +35,22 @@ function About() {
             <div className="about-details">
               <div className="about-detail-item">
                 <p>
-                  <span className="detail-label">Name:</span> Your Name
+                  <span className="detail-label">Name:</span> Thushan Madhusanka Madarsinghe
                 </p>
               </div>
               <div className="about-detail-item">
                 <p>
-                  <span className="detail-label">Email:</span> your.email@example.com
+                  <span className="detail-label">Email:</span> thushanmadu2003@gmail.com
                 </p>
               </div>
               <div className="about-detail-item">
                 <p>
-                  <span className="detail-label">Phone:</span> +1 234 567 890
+                  <span className="detail-label">Phone:</span> +94 70 392 1791
                 </p>
               </div>
               <div className="about-detail-item">
                 <p>
-                  <span className="detail-label">Location:</span> Your City, Country
+                  <span className="detail-label">Location:</span> Galle, Sri Lanka
                 </p>
               </div>
             </div>
