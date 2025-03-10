@@ -22,12 +22,12 @@ function About() {
               I'm <span className="text-accent">Thushan Madhusanka Madarsinghe</span>, a Full-Stack Developer
             </h3>
             <p className="about-description">
-              I am a passionate web developer with a strong focus on creating responsive and user-friendly websites.
+              I am a passionate Full-Stack developer with a strong focus on creating responsive and user-friendly websites.
               With several years of experience in the field, I have developed a deep understanding of both front-end and
               back-end technologies.
             </p>
             <p className="about-description">
-              My journey in web development started when I was in college, and since then, I have been constantly
+              My journey in web development started when I was in university, and since then, I have been constantly
               learning and improving my skills. I believe in writing clean, maintainable code and staying up-to-date
               with the latest industry trends and best practices.
             </p>
