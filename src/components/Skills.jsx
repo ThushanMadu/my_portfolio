@@ -2,21 +2,21 @@ import "./Skills.css"
 
 function Skills() {
   const programmingSkills = [
-    { name: "JavaScript", percentage: 90 },
-    { name: "Java", percentage: 85 },
-    { name: "Python", percentage: 75 },
+    { name: "Java", percentage: 90 },
+    { name: "Java Script", percentage: 85 },
+    { name: "React", percentage: 85 },
     { name: "TypeScript", percentage: 80 },
-    { name: "PHP", percentage: 70 },
-    { name: "C#", percentage: 65 },
+    { name: "Python", percentage: 70 },
+    { name: "PHP", percentage: 50 },
   ]
 
   const frameworkSkills = [
     { name: "React", percentage: 90 },
-    { name: "Next.js", percentage: 85 },
+    { name: "React Native", percentage: 85 },
     { name: "Node.js", percentage: 80 },
     { name: "Express", percentage: 75 },
     { name: "Spring Boot", percentage: 70 },
-    { name: "Django", percentage: 65 },
+    { name: "Next", percentage: 40 },
   ]
 
   const otherSkills = [
@@ -24,14 +24,8 @@ function Skills() {
     "CSS3",
     "Git",
     "RESTful API",
-    "GraphQL",
     "MongoDB",
     "MySQL",
-    "PostgreSQL",
-    "Docker",
-    "AWS",
-    "Firebase",
-    "Redux",
   ]
 
   return (
