@@ -115,7 +115,7 @@ function Contact() {
             <div className="social-links">
               <h4 className="social-title">Follow Me</h4>
               <div className="social-icons">
-                <a href="#" className="social-icon">
+                <a href="https://www.facebook.com/share/1DJkhUQxee/?mibextid=wwXIfr" className="social-icon">
                   <svg className="social-svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
