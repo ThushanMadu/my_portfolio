@@ -124,7 +124,7 @@ function Contact() {
                     ></path>
                   </svg>
                 </a>
-                <a href="#" className="social-icon">
+                <a href="https://www.instagram.com/mr_t_u_t_u?igsh=d3E3Z3NnbGFsa2Yy&utm_source=qr" className="social-icon">
                   <svg className="social-svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
