@@ -32,7 +32,7 @@ function Projects() {
       title: "Progression Outcome Tracker - Python Application (University Project)",
       description: "This application was developed as part of my university coursework to track student progression based on their credits in pass, defer, and fail categories. It calculates progression outcomes, displays results in a histogram format, and stores the data in a file for record-keeping.",
       image: "/placeholder.jpg",
-      tags: ["JavaScript", "Weather API", "CSS"],
+      tags: ["Python"],
       liveLink: "#",
       githubLink: "This application was developed as part of my university coursework to track student progression based on their credits in pass, defer, and fail categories. It calculates progression outcomes, displays results in a histogram format, and stores the data in a file for record-keeping.",
     },
