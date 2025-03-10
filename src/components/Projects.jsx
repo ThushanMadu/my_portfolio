@@ -4,39 +4,37 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "22222222222222222",
-      description: "A fully responsive e-commerce platform built with React, Node.js, and MongoDB.",
+      title: "Govishkthi Mobile Application",
+      description: "Developing an AI-powered mobile application for the GoviShakthi project, an SDGP project in my 2nd year of IIT, designed to help farmers mitigate price drops by recommending value-added products.",
       image: "/placeholder.jpg",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
-      liveLink: "#",
+      tags: ["React Native", "Node.js", "MongoDB", "Express"],
       githubLink: "#",
     },
     {
       id: 2,
-      title: "aaaaaaaaaaaaaaaaa",
-      description: "A modern portfolio website built with React and CSS.",
+      title: "Real-Time Ticketing Platform",
+      description: "This comprehensive event ticketing system, built with Node.js, Express, React.js, and Java, offers a seamless user experience for both vendors and customers. It ensures smooth ticket purchasing, real-time updates on seat availability, and robust transaction handling.",
       image: "/placeholder.jpg",
-      tags: ["React", "CSS", "JavaScript"],
-      liveLink: "#",
-      githubLink: "#",
+      tags: ["React", "Node.js","Express.js"],
+      githubLink: "https://github.com/ThushanMadu/Ticket-System",
     },
     {
       id: 3,
-      title: "Ttttttttttttttt",
-      description: "A task management application with user authentication and real-time updates.",
+      title: "Plane Management System – Java Console Application (University Project)",
+      description: "Developed as part of my university coursework, this console-based Plane Management System efficiently manages seat booking, cancellations, and ticket tracking, providing a user-friendly experience for handling flight seat reservations.",
       image: "/placeholder.jpg",
-      tags: ["React", "Firebase", "Material UI"],
+      tags: ["java",],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "https://github.com/ThushanMadu/Plane-Management",
     },
     {
       id: 4,
-      title: "eeeeeeeeeeeeeeeeeeeee",
-      description: "A weather application that shows current weather and forecasts for any location.",
+      title: "Progression Outcome Tracker - Python Application (University Project)",
+      description: "This application was developed as part of my university coursework to track student progression based on their credits in pass, defer, and fail categories. It calculates progression outcomes, displays results in a histogram format, and stores the data in a file for record-keeping.",
       image: "/placeholder.jpg",
       tags: ["JavaScript", "Weather API", "CSS"],
       liveLink: "#",
-      githubLink: "#",
+      githubLink: "This application was developed as part of my university coursework to track student progression based on their credits in pass, defer, and fail categories. It calculates progression outcomes, displays results in a histogram format, and stores the data in a file for record-keeping.",
     },
   ]
 
@@ -129,8 +127,8 @@ function Projects() {
         </div>
 
         <div className="projects-more">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="view-all-button">
-            View All Projects
+          <a href="https://github.com/ThushanMadu" target="_blank" rel="noopener noreferrer" className="view-all-button">
+            View All Projects on my Git Hub
           </a>
         </div>
       </div>
