@@ -13,7 +13,7 @@ function About() {
           <div className="about-image-container">
             <div className="about-image-border"></div>
             <div className="about-image-wrapper">
-              <img src="/placeholder.jpg" alt="Profile Picture" className="about-image" />
+              <img src="/images/photo_2025-03-10_10-45-09.jpg" alt="Profile Picture" className="about-image" />
             </div>
           </div>
 

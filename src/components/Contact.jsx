@@ -38,7 +38,7 @@ function Contact() {
           <div className="contact-info">
             <h3 className="contact-subtitle">Contact Information</h3>
             <p className="contact-text">
-              I'm interested in freelance opportunities – especially ambitious or large projects. However, if you have
+              I'm interested in freelance opportunities – especially ambitious or open projects. However, if you have
               other requests or questions, don't hesitate to contact me.
             </p>
 

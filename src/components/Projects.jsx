@@ -4,7 +4,7 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Website",
+      title: "22222222222222222",
       description: "A fully responsive e-commerce platform built with React, Node.js, and MongoDB.",
       image: "/placeholder.jpg",
       tags: ["React", "Node.js", "MongoDB", "Express"],
@@ -13,7 +13,7 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Portfolio Website",
+      title: "aaaaaaaaaaaaaaaaa",
       description: "A modern portfolio website built with React and CSS.",
       image: "/placeholder.jpg",
       tags: ["React", "CSS", "JavaScript"],
@@ -22,7 +22,7 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Task Management App",
+      title: "Ttttttttttttttt",
       description: "A task management application with user authentication and real-time updates.",
       image: "/placeholder.jpg",
       tags: ["React", "Firebase", "Material UI"],
@@ -31,7 +31,7 @@ function Projects() {
     },
     {
       id: 4,
-      title: "Weather Application",
+      title: "eeeeeeeeeeeeeeeeeeeee",
       description: "A weather application that shows current weather and forecasts for any location.",
       image: "/placeholder.jpg",
       tags: ["JavaScript", "Weather API", "CSS"],
