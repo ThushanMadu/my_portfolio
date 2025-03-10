@@ -133,7 +133,7 @@ function Contact() {
                     ></path>
                   </svg>
                 </a>
-                <a href="#" className="social-icon">
+                <a href="https://github.com/ThushanMadu" className="social-icon">
                   <svg className="social-svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                       fillRule="evenodd"
