@@ -37,7 +37,7 @@ function Navbar() {
       <div className="navbar-container">
         <div className="navbar-content">
           <a href="/" className="navbar-logo">
-            <span className="logo-accent">My</span> Portfolio
+            <span className="logo-accent">ThushanMadu</span> Portfolio
           </a>
 
           {/* Desktop Navigation */}

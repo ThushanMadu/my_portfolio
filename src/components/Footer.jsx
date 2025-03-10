@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-logo">
             <a href="/" className="logo">
-              <span className="logo-accent">Port</span>folio
+              <span className="logo-accent">ThushanMadu </span>Portfolio
             </a>
           </div>
 

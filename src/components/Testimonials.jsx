@@ -4,35 +4,19 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
-      position: "CEO, Company Name",
+      name: "person 1",
+      position: "Company Name",
       image: "/placeholder.jpg",
       message:
-        "Working with this developer was an absolute pleasure. Their attention to detail and technical expertise helped us launch our project ahead of schedule.",
+        "Testamonial 1",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      position: "Project Manager, Company Name",
+      name: "Person 2",
+      position: "Company Name",
       image: "/placeholder.jpg",
       message:
-        "One of the most reliable developers I've worked with. They consistently delivered high-quality code and were always willing to go the extra mile.",
-    },
-    {
-      id: 3,
-      name: "Michael Johnson",
-      position: "CTO, Company Name",
-      image: "/placeholder.jpg",
-      message:
-        "Their technical skills are impressive, but what really sets them apart is their ability to understand business requirements and translate them into effective solutions.",
-    },
-    {
-      id: 4,
-      name: "Emily Williams",
-      position: "Lead Developer, Company Name",
-      image: "/placeholder.jpg",
-      message:
-        "A talented developer who brings both technical expertise and creative problem-solving to every project. It was a pleasure collaborating with them.",
+        "testamonial 2",
     },
   ]
 
