@@ -55,7 +55,7 @@ function About() {
               </div>
             </div>
 
-            <a href="/resume.pdf" download className="download-cv-button">
+            <a href="/Thushan_Madarasinghe.pdf" download className="download-cv-button">
               Download CV
             </a>
           </div>

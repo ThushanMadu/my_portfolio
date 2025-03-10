@@ -38,7 +38,7 @@ function Hero() {
           >
             Contact Me
           </button>
-          <a href="/resume.pdf" download className="secondary-button">
+          <a href="/Thushan_Madarasinghe.pdf" download className="secondary-button">
             Download CV
           </a>
         </div>
