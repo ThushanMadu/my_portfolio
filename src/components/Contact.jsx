@@ -11,9 +11,44 @@ function Contact() {
     message: "",
   })
 
+  const [status, setStatus] = useState('')
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('sending')
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/thushanmadu2003@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        })
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setFormData({ name: "", email: "", subject: "", message: "" })
+        alert("Message sent successfully!")
+      } else {
+        throw new Error('Failed to send message')
+      }
+    } catch (error) {
+      console.error('Error:', error)
+      setStatus('error')
+      alert("Failed to send message. Please try again.")
+    }
   }
 
   return (
@@ -144,27 +179,15 @@ function Contact() {
 
           <div className="contact-form-container">
             <h3 className="contact-subtitle">Send Me A Message</h3>
-            <form 
-              action="https://formsubmit.co/thushanmadu2003@gmail.com" 
-              method="POST" 
-              className="contact-form"
-            >
-              {/* Honeypot */}
-              <input type="text" name="_honey" style={{ display: 'none' }} />
-              
-              {/* Disable Captcha */}
-              <input type="hidden" name="_captcha" value="false" />
-              
-              {/* Success Page */}
-              <input type="hidden" name="_next" value="https://your-website-url.com/thanks" />
-
+            <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name" className="form-label">Name</label>
+                  <label htmlFor="name" className="form-label">
+                    Name
+                  </label>
                   <input
-                    type="text"
-                    name="name"
                     id="name"
+                    name="name"
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
@@ -173,11 +196,13 @@ function Contact() {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="email" className="form-label">Email</label>
+                  <label htmlFor="email" className="form-label">
+                    Email
+                  </label>
                   <input
-                    type="email"
-                    name="email"
                     id="email"
+                    name="email"
+                    type="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email"
@@ -187,11 +212,12 @@ function Contact() {
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="subject" className="form-label">Subject</label>
+                <label htmlFor="subject" className="form-label">
+                  Subject
+                </label>
                 <input
-                  type="text"
-                  name="subject"
                   id="subject"
+                  name="subject"
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="Subject"
@@ -200,10 +226,12 @@ function Contact() {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="message" className="form-label">Message</label>
+                <label htmlFor="message" className="form-label">
+                  Message
+                </label>
                 <textarea
-                  name="message"
                   id="message"
+                  name="message"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Your Message"
