@@ -13,8 +13,8 @@
 .about-image-container {
   position: relative;
   aspect-ratio: 1 / 1;
-  max-width: 20rem;
-  width: 100%;
+  max-width: 100%;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
   position: absolute;
   inset: 0;
   border: 2px solid #ff0000;
-  transform: translate(1rem, 1rem);
+  transform: translate(0.5rem, 0.5rem);
   border-radius: 0.75rem;
 }
 
@@ -31,12 +31,15 @@
   overflow: hidden;
   border-radius: 0.75rem;
   border: 4px solid #333333;
+  height: 100%;
 }
 
 .about-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .about-subtitle {
@@ -101,6 +104,20 @@
   .about-details {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  
+  .about-image-container {
+    width: 380px;
+  }
+  
+  .about-image-border {
+    transform: translate(1rem, 1rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-image-container {
+    width: 24rem;
   }
 }
 
