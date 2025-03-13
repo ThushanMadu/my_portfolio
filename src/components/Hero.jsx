@@ -21,7 +21,7 @@ function Hero() {
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="hero-title-white">Hello, I'm </span>
-          <span className="hero-title-accent">Thushan Madhusanka Madarasinghe</span>
+          <span className="hero-title-accent">Thushan Madarasinghe</span>
         </h1>
         <p className="hero-subtitle">
           A passionate developer specializing in creating beautiful and functional web experiences
