@@ -112,7 +112,7 @@ function Navbar() {
             <button onClick={() => scrollToSection("contact")} className="mobile-nav-link">
               Contact
             </button>
-            <a href="/resume.pdf" download className="mobile-download-button">
+            <a href="/public/Thushan_Madarasinghe.pdf" download className="mobile-download-button">
               Download CV
             </a>
           </nav>
