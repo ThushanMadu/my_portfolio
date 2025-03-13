@@ -11,7 +11,8 @@ function Contact() {
     message: "",
   })
 
-  const [status, setStatus] = useState('')
+  const [showPopup, setShowPopup] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -20,16 +21,16 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setStatus('sending')
+    setLoading(true)
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/thushanmadu2003@gmail.com', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json'
         },
         body: JSON.stringify({
+          access_key: "1e68bcee-f078-484f-aeb6-7d534c321bb4",
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
@@ -37,17 +38,23 @@ function Contact() {
         })
       })
 
-      if (response.ok) {
-        setStatus('success')
+      const data = await response.json()
+
+      if (data.success) {
+        setShowPopup(true)
         setFormData({ name: "", email: "", subject: "", message: "" })
-        alert("Message sent successfully!")
+        // Hide popup after 3 seconds
+        setTimeout(() => {
+          setShowPopup(false)
+        }, 3000)
       } else {
         throw new Error('Failed to send message')
       }
     } catch (error) {
       console.error('Error:', error)
-      setStatus('error')
       alert("Failed to send message. Please try again.")
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -239,7 +246,7 @@ function Contact() {
                   className="form-textarea"
                 ></textarea>
               </div>
-              <button type="submit" className="submit-button">
+              <button type="submit" className="submit-button" disabled={loading}>
                 <svg
                   width="18"
                   height="18"
@@ -256,12 +263,42 @@ function Contact() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Send Message
+                {loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
         </div>
       </div>
+
+      {/* Success Popup */}
+      {showPopup && (
+        <div className="success-popup">
+          <div className="popup-content">
+            <svg 
+              className="success-icon" 
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                d="M9 12l2 2 4-4" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              />
+              <circle 
+                cx="12" 
+                cy="12" 
+                r="10" 
+                stroke="currentColor" 
+                strokeWidth="2"
+              />
+            </svg>
+            <p>Message sent successfully!</p>
+          </div>
+        </div>
+      )}
     </section>
   )
 }
