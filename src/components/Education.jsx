@@ -5,7 +5,7 @@ function Education() {
     {
       id: 1,
       type: "education",
-      title: "School",
+      title: "College",
       institution: "Richmond College Galle",
       period: "2013 - 2022",
       description: "Completed primary and secondary education with a focus on Physical Science. Engaged in various extracurricular activities and leadership roles."

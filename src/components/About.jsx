@@ -32,7 +32,7 @@ function About() {
               back-end technologies.
             </p>
             <p className="about-description">
-              My journey in web development started when I was in university, and since then, I have been constantly
+              My journey in Full-Stack development started when I was in university, and since then, I have been constantly
               learning and improving my skills. I believe in writing clean, maintainable code and staying up-to-date
               with the latest industry trends and best practices.
             </p>
