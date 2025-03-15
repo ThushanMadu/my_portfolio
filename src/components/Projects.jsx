@@ -4,7 +4,7 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Govishkthi Mobile Application",
+      title: "Govishakthi Mobile Application (On Going)",
       description: "Developing an AI-powered mobile application for the GoviShakthi project, an SDGP project in my 2nd year of IIT, designed to help farmers mitigate price drops by recommending value-added products.",
       image: "images/GoviShakthi Logo.png",
       tags: ["React Native", "Node.js", "MongoDB", "Express"],
