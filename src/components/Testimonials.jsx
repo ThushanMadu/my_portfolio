@@ -4,7 +4,7 @@ function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "person 1",
+      name: "person example 1",
       position: "Company Name",
       image: "/placeholder.jpg",
       message:
