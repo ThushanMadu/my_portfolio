@@ -41,6 +41,14 @@ function Education() {
       institution: "Informatics Institute of Technology",
       period: "2023 - Present",
       description: "Actively contributing to IEEE events and initiatives, assisting in organizing workshops and coding competitions, and engaging in community-driven tech projects."
+    },
+    {
+      id: 6,
+      type: "work",
+      title: "Software Engineer Intern",
+      institution: "WSO2",
+      period: "2025 June - Present",
+      description: "Currently interning under the Digital Transformation Team, specifically within the Internal Apps branch. Contributing to the development and maintenance of the Certification Portal by implementing new features, fixing issues, and improving system usability. Supporting internal process automation and collaborating with cross-functional teams to align with organizational goals.",
     }
   ]
 
