@@ -19,6 +19,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <Footer />
     </main>
   )
 }
